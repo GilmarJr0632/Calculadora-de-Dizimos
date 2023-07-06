@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Dízimos</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div id="container">
+        <div>
+           <h1 class="title">Calculadora de Dízimos</h1> 
+        </div>
+        <div>
+           <form class="tipsForm" id="tipsForm">
+             <label for="bill">
+                <p>Quanto foi teu salário?</p>
+             </label>
+               <p>
+                R$ <input type="number" placeholder="100" name="bill" id="bill" class="formimput" required>
+               </p>
+
+             <label for="serviceQual">
+                <p>Porcentagem:</p>
+             </label>  
+             <p>
+               <select name="serviceQual" id="serviceQual" class="formselect">
+                <option value="0.1">10% (Dez porcento)</option>  
+               </select>
+             </p>
+             <button type="submit" class="formsubmit">Calcular</button>
+           </form>
+        </div>
+        <div id="totaltip">
+          Dízimo total:
+          R$<span id="tip">0.00</span>
+        </div>
+        <h4 class="direitos">site criado por <a href="https://www.instagram.com/gilmar_junior.of/">@gilmar_junior.of</a></h4>
+       </div>
+      
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
